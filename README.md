@@ -1,0 +1,3 @@
+A simple rock paper scissors game for the terminal.
+
+Code REALLY needs to be cleaned up...
