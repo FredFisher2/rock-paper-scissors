@@ -7,7 +7,7 @@ int game(int pWins, int cWins) {
     int cChoice{};
 
     //Gets players choice
-    std::cout << "Make your choice! \n";
+    std::cout << "Choose your weapon! \n";
     std::cin >> pChoice;
 
     //Gets CPU's choice
@@ -15,10 +15,10 @@ int game(int pWins, int cWins) {
     cChoice = rand() % 3;
 
     //Announces CPU choice and determines winner
-    if (pChoice == 0) {
-        if (cChoice == 0) {
-            std::cout << "CPU chose rock! \n" << "You chose the same thing... \n";
-        } else if (cChoice == 1) {
+    if (cChoice == pChoice) {
+        std::cout << "You chose the same thing! \n" << "No points awarded... \n";
+    } else if (pChoice == 0) {
+            if (cChoice == 1) {
             std::cout << "CPU chose paper! \n" << "You lost... +1 point to CPU \n";
             cWins = cWins + 1;
         } else {
@@ -29,9 +29,6 @@ int game(int pWins, int cWins) {
         if (cChoice == 0) {
             std::cout << "CPU chose rock! \n" << "You won! +1 point to you! \n";
             pWins = pWins + 1;
-        } else if (cChoice == 1) {
-            std::cout << "CPU chose paper! \n" << "You chose the same thing... \n";
-
         } else {
             std::cout << "CPU chose scissors! \n" << "You lost... +1 point to CPU \n";
             cWins = cWins + 1;
@@ -40,14 +37,13 @@ int game(int pWins, int cWins) {
         if (cChoice == 0) {
             std::cout << "CPU chose rock! \n" <<  "You lost... +1 point to CPU \n";
             cWins = cWins + 1;
-        } else if (cChoice == 1) {
-            std::cout << "CPU chose paper! \n" << "You won! +1 point to you! \n";
-            pWins = pWins + 1; 
-
         } else {
-            std::cout << "CPU chose scissors! \n" << "You chose the same thing... \n";
+            std::cout << "CPU chose paper! \n" << "You won! +1 point to you! \n";
+            pWins = pWins + 1;
+
         }
     }
+
     std::cout << "Player: " << pWins << " CPU: " << cWins << '\n';
     game(pWins, cWins);
 
