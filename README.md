@@ -1,3 +1,3 @@
 A simple rock paper scissors game for the terminal.
 
-Code REALLY needs to be cleaned up...
+Problem solving a way to make the point awarder and win message cleaner
