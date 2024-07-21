@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Rock, Paper Scissors (CLI)
+Comment=Rock, Paper, Scissors
+Exec=rock-paper-scissors
+Keywords=game;rock;paper;scissors;rps;
+Terminal=true
+Type=Application
+Icon=rps
+Categories=Game;
