@@ -44,7 +44,7 @@ int game(int pWins, int cWins) {
         }
     }
 
-    std::cout << "Player: " << pWins << " CPU: " << cWins << '\n';
+    std::cout << "Player: " << pWins << " CPU: " << cWins << '\n' << '\n';
     game(pWins, cWins);
 
     return 0;
